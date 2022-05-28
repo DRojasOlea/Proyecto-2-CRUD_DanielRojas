@@ -10,26 +10,16 @@ h1, h2{
 
 .container{
     align-items: center;
-
-}
-
-body > table{
-    width: 80%;
-    margin: 0 auto;
-}
-
-table{
-    border-collapse: collapse;
-}
-
-table.list{
+    padding: 2%;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 td,th{
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+    align-items: center;
 }
 tr:nth-child(even),table.list thead>tr{
     background-color: #9ddde9;
@@ -37,6 +27,7 @@ tr:nth-child(even),table.list thead>tr{
 p{
     text-align: justify;
     padding: 5%;
+    color: #730a96;
 }
 input[type=text]{
     width: 100%;
@@ -50,9 +41,22 @@ input[type=text]{
 .form-action-buttons{
     text-align: right;
 }
-a{
-    cursor: pointer;
-    text-decoration: underline;
-    color: #8d0bb9;
+thead{
+    text-decoration: underline ;
+}
+tbody{
+    cursor: default;
+    color: #294dd0;
     margin-right: 4px;
+    align-items: center;
+}
+@media (min-width:991px) and (max-width:1324px){
+    .adicional{
+        background: #feffb8;
+    }
+}
+@media (min-width:477px) and (max-width:990px){
+    .adicional{
+        background: #b8bfff;
+    }
 }
