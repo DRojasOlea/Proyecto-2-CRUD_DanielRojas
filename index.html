@@ -15,18 +15,48 @@
        <h2>Boda Azu y Dani</h2>
    </header>
    <div class='container'>
-       <div class='row'>
-           <form>
-               <fieldset>
-                   <legend>Invitado</legend>
-                   <input type="text" class="form-control" id="item1"/>
-                   <br/>
-                   <legend>Parentezco</legend>
-                   <input type="text" class="form-control" id="item2"/>
-                   <br/>
-               </fieldset>
-           </form>
-       </div>
+       
+           <table>
+               <tr>
+                   <td>
+                       <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+                            <div>
+                                <label>Nombre Completo</label>
+                                <input type="text" name="nombreCompleto" id="fullName">
+                            </div>
+                            <div>
+                                <label>Origen</label>
+                                <input type="text" name="origin" id="origen">
+                            </div>
+                            <div>
+                                <label>Parentesco</label>
+                                <input type="text" name="parentezco" id="parentesco">
+                            </div>
+                            <div class="form-action-buttons">
+                                <input type="submit" name="Submit">
+                            </div>
+                       </form>
+                   </td>
+                   <td>
+                       <table class="list" id="listaInvitados">
+                           <thead>
+                               <tr>
+                                   <th>Nombre Completo</th>
+                                   <th>Origen</th>
+                                   <th>Parentesco</th>
+                                   <th></th>
+                               </tr>
+                           </thead>
+                           <tbody>
+                               
+                           </tbody>
+                       </table>
+
+                   </td>
+               </tr>
+
+           </table>
+
    </div>
     
 
