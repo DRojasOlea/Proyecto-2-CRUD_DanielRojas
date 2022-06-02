@@ -59,3 +59,21 @@ function onDelete(td){
     resetForm ();
     }
 }
+
+let invitado = {
+    fullName,
+    origen,
+    parentesco
+}
+if (localStorage.getItem('Invitados')---null){
+    let Invitados =[]
+    invitado.push(invitado)
+    localStorage.setItem('Invitados', JSON.stringify(invitado))
+} else {
+    let libros = localStorage.getItem(JSON.parse('Invitados'))
+    invitado.push(invitado)
+    localStorage.setItem('Invitados', JSON.stringify(invitado))
+}
+
+
+
